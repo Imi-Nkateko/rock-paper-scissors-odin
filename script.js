@@ -65,4 +65,15 @@ const playRound = (humanChoice, computerChoice) => {
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
-playRound(humanSelection, computerSelection);
+
+
+// Write the logic to play the entire game
+// Create a new function named playGame.
+// Move  playRound function and score variables so that  
+// they’re declared inside of the new playGame function
+// Play 5 rounds by calling playRound 5 times
+const playGame = () => {
+    playRound(humanSelection, computerSelection);
+}
+
+playGame()
