@@ -1,7 +1,7 @@
 // Declare the players Score variable in the Global scope
 // default score should be 0
-let humanScore = 0
-let computerScore = 0
+let humanScore = 0;
+let computerScore = 0;
 
 
 
@@ -18,7 +18,7 @@ const getComputerChoice = () => {
     }
     return "scissors"
 }
-console.log(getComputerChoice())
+
 
 // Create a new function named getHumanChoice.
 // Write code that will get User INPUT and RETURN the value
@@ -27,7 +27,7 @@ const getHumanChoice = () => {
     return humanChoice.toLowerCase()
     
 }
-console.log(getHumanChoice())
+
 
 //  Write the logic to play a single round
 // Create a new function named playRound().
@@ -61,3 +61,8 @@ const playRound = (humanChoice, computerChoice) => {
         console.log("Enter Rock, Paper or Scissors")
     }
 }
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
