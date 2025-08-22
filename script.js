@@ -1,9 +1,15 @@
 let humanScore = 0;
 let computerScore = 0;
 
+const scoreDisplay = document.querySelector("#scoreDisplay");
+
 const rockbtn = document.querySelector("#rockBtn");
 const paperbtn = document.querySelector("#paperBtn");
 const scissorsbtn = document.querySelector("#scissorsBtn");
+
+const resultsEl = document.querySelector("#displayResults");
+
+let resultDisplay = document.createElement("h1");
 
 rockbtn.addEventListener("click", () => {
   playRound("rock");
@@ -24,24 +30,48 @@ const getComputerChoice = () => {
 };
 
 const playRound = (humanChoice) => {
+  
   const computerChoice = getComputerChoice();
   console.log(`Computer chose: ${computerChoice}`);
 
+
   if (humanChoice === "rock" && computerChoice === "scissors") {
-    console.log("You win! Rock beats Scissors");
+
+    resultDisplay.textContent = "You win! Rock beats Scissors";
+    
     humanScore++;
   } else if (humanChoice === "paper" && computerChoice === "rock") {
-    console.log("You win! Paper beats Rock");
+ 
+    resultDisplay.textContent = "You win! Paper beats Rock";
     humanScore++;
   } else if (humanChoice === "scissors" && computerChoice === "paper") {
-    console.log("You win! Scissors beats Paper");
+   
+    resultDisplay.textContent = "You win! Scissors beats Paper";
     humanScore++;
   } else if (humanChoice === computerChoice) {
-    console.log(`Draw! You both chose ${humanChoice}`);
+  
+    resultDisplay.textContent = `Draw! You both chose ${humanChoice}`;
   } else {
-    console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
+  
+    resultDisplay.textContent = `You lose! ${computerChoice} beats ${humanChoice}`;
     computerScore++;
   }
 
-  console.log(`Score: You ${humanScore} - Computer ${computerScore}`);
+    resultsEl.appendChild(resultDisplay);
+
+    scoreDisplay.textContent = `Score: You ${humanScore} - Computer ${computerScore}`;
+    if (humanScore === 5) {
+      scoreDisplay.textContent =
+        "Game Over, Player Wins!!!....Click Rock, Paper or Scissors to restart";
+      humanScore = 0;
+      computerScore = 0;
+      resultDisplay.textContent = "";
+    } else if (computerScore === 5) {
+      scoreDisplay.textContent = "Game Over, Computer Wins!!!....Click Rock, Paper or Scissors to restart";
+      humanScore = 0;
+      computerScore = 0;
+      resultDisplay.textContent = "";
+    }
+
+    
 };
