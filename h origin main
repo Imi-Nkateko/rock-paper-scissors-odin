@@ -1,0 +1,65 @@
+[33mcommit d67af27987bba5938a525b80ddf5f7b3d913b079[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/rps-ui[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mrps-ui[m[33m)[m
+Author: Nkateko Shikuhele <shikuhelenkateko@gmail.com>
+Date:   Fri Aug 22 21:32:20 2025 +0200
+
+    Refactor playRound function to update result display and score logic
+
+[33mcommit f638a1594c58e213cd09178b7934c232760bc363[m
+Author: Nkateko Shikuhele <shikuhelenkateko@gmail.com>
+Date:   Fri Aug 22 21:31:59 2025 +0200
+
+    Add display results and score display elements to index.html
+
+[33mcommit 5bf59cdce23477e4974616b911f929a26f03652f[m
+Author: Nkateko Shikuhele <shikuhelenkateko@gmail.com>
+Date:   Fri Aug 22 20:28:19 2025 +0200
+
+    Add buttons for user choices in the rock-paper-scissors game
+
+[33mcommit fce6551a1958b15ed6864144ab90610a68c7c4b8[m
+Author: Nkateko Shikuhele <shikuhelenkateko@gmail.com>
+Date:   Fri Aug 22 20:28:06 2025 +0200
+
+    Refactor playRound function to accept only humanChoice and integrate computer choice logic
+
+[33mcommit e65532dbd20b2518077332326fae92a24bd955c4[m
+Author: Nkateko Shikuhele <shikuhelenkateko@gmail.com>
+Date:   Wed Aug 20 16:40:30 2025 +0200
+
+    Remove playGame function and call playRound directly for single round execution
+
+[33mcommit 5bd077b983d93726e7f1052e2338b6a680a7f97a[m
+Author: Nkateko Shikuhele <shikuhelenkateko@gmail.com>
+Date:   Thu Aug 7 22:25:08 2025 +0200
+
+    Add playGame function to manage game rounds and encapsulate playRound logic
+
+[33mcommit d501d4089272a9d659775e3ff1b6930d1dd36a95[m
+Author: Nkateko Shikuhele <shikuhelenkateko@gmail.com>
+Date:   Thu Aug 7 22:07:13 2025 +0200
+
+    Fix formatting and add missing newlines in script.js
+
+[33mcommit d32dd21b1a3e208cdc59461b50ea44830f3a4c66[m
+Author: Nkateko Shikuhele <shikuhelenkateko@gmail.com>
+Date:   Thu Aug 7 22:02:08 2025 +0200
+
+    Add HTML structure for rock-paper-scissors game
+
+[33mcommit 2b12c292890a703e4fcd19a35678132d2d9fb2e1[m
+Author: Nkateko Shikuhele <shikuhelenkateko@gmail.com>
+Date:   Thu Aug 7 22:02:02 2025 +0200
+
+    Implement rock-paper-scissors game logic with score tracking
+
+[33mcommit 480f165917c63727bed5830bd613702ce08a7cbd[m
+Author: Nkateko Shikuhele <shikuhelenkateko@gmail.com>
+Date:   Thu Aug 7 20:39:14 2025 +0200
+
+    Add initial script file for rock-paper-scissors game
+
+[33mcommit fd144231824e8643e0e5c617dc831b2ce5c31a3f[m
+Author: Nkateko Shikuhele <shikuhelenkateko@gmail.com>
+Date:   Thu Aug 7 18:44:28 2025 +0200
+
+    Initial commit
